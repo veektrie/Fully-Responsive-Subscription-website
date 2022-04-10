@@ -16,13 +16,18 @@
   </head>
 
   <body>
-    <div class="collapsible">
-      <h2>Item 1</h2>
-      <span class="icon-container">
-        <svg class="icon icon--primary">
-          <use xlink:href="images/sprite.svg#chevron"></use>
-        </svg>
-      </span>
-    </div>
+    <nav class="nav collapsible collapsible--expanded">
+      <a href="/"><img src="images/logo.svg" alt="" /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Vps</a></li>
+        <li class="nav__item"><a href="#">Hosting</a></li>
+        <li class="nav__item"><a href="#">Domain</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
+    <script src="js/main.js"></script>
   </body>
 </html>
